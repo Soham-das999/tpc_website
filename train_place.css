@@ -1,0 +1,186 @@
+html {
+  background-color: powderblue;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.478);
+  background-color: #ffffff;
+}
+
+.header .title {
+  text-align: center;
+  flex: 1;
+}
+
+.header .title h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  font-size: 30px;
+  margin: 0;
+}
+
+.header .title h5 {
+  font-size: 12.5px;
+  margin: 5px 0 0 0;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.container {
+  background-color: #124c8b;
+  overflow: hidden;
+}
+
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container li {
+  padding: 14px 20px;
+}
+
+.container a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.container a:hover {
+  background-color: #555;
+}
+
+h1 {
+  padding-top: 70px;
+  padding-left: 50px;
+}
+
+.content {
+  padding-top: 100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 20px;
+}
+
+p {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 10px;
+}
+
+#f {
+  margin-bottom: 30px;
+}
+
+.footer {
+  background-color: #124c8b;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  color: white;
+  text-decoration: underline;
+}
+
+.contact-link:hover {
+  color: #ddd;
+}
+
+.section {
+  background-size: cover;
+  background-position: center;
+  padding: 80px 0;
+  min-height: 400px;
+  position: relative;
+}
+
+.content-box {
+  background-color: rgba(255, 255, 255, 0.85); /* light background block */
+  margin: 0 auto;
+  max-width: 80%;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.section p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Section title styling */
+.content-box h2 {
+  font-size: 28px;
+  color: #124c8b;
+  margin-bottom: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 2px solid #124c8b;
+  padding-bottom: 10px;
+}
+
+/* Paragraph inside section */
+.content-box p {
+  font-size: 16.5px;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 10px;
+}
+
+/* Resource list */
+.resource-list {
+  margin-top: 20px;
+  padding-left: 40px;
+  list-style-type: disc;
+}
+
+.resource-list li {
+  font-size: 16px;
+  margin-bottom: 10px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.resource-list a {
+  color: #124c8b;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.resource-list a:hover {
+  color: #0a2e59;
+  text-decoration: underline;
+}
+
+

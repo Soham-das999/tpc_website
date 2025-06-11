@@ -1,0 +1,126 @@
+<!DOCTYPE html >
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Training and Placement Management System</title>
+  <link rel="stylesheet" href="train_place.css">
+  <style>
+    p {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+
+<script>
+  // Check login state and update the navbar
+  document.addEventListener('DOMContentLoaded', () => {
+    const authLink = document.getElementById('auth-link');
+    const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+    if (isLoggedIn) {
+      const username = localStorage.getItem('username') || 'Student';
+      authLink.innerHTML = `<a href="#" id="logout-link">Logout (${username})</a>`;
+
+      // Add logout functionality
+      document.getElementById('logout-link').addEventListener('click', function(e) {
+        e.preventDefault();
+        localStorage.removeItem('isLoggedIn');
+        localStorage.removeItem('username');
+        location.reload(); // Refresh to show login again
+      });
+    } else {
+      authLink.innerHTML = `<a href="login.html">Student Portal</a>`;
+    }
+  });
+</script>
+
+<body>
+  <!-- Header with Logo and Title -->
+  <header class="header">
+    <img class="logo" src="logo.jpeg" alt="Training and Placement Management System">
+    <div class="title">
+      <h1 id="f">Training and Placement Management System</h1>
+      <h5>Your one-stop solution for managing training, internships & placement efficiently</h5>
+    </div>
+    <img class="logo" src="logo.jpeg" alt="Training and Placement Management System">
+  </header>
+
+  <!-- Navigation Bar -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li id="auth-link"><a href="login.html">Student Portal</a></li>
+          <li><a href="#training">Training</a></li>
+          <li><a href="#placement">Placements</a></li>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="about_us.html">About Us</a></li>
+          <li><a href="help.html">Help&Support</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Training Section -->
+  <div id="training" class="section" style="background-image: url('training.jpg');">
+    <div class="content-box">
+      <h2>Training</h2>
+       <p>
+          The Training Program aims to bridge the gap between academic learning and industry expectations. 
+          It equips students with the essential technical skills, soft skills, and hands-on experience required 
+          to thrive in real-world professional environments. Through workshops, internships, certifications, 
+          and mentorship by industry experts, we ensure that students are not only job-ready but also confident 
+          and competent to take on future challenges. The program emphasizes continuous learning, practical exposure, 
+          and holistic development to prepare every student for a successful career path.
+      </p>
+    </div>
+  </div>
+
+  <!-- Placement Section -->
+  <div id="placement" class="section" style="background-image: url('placement.jpg');">
+    <div class="content-box">
+      <h2>Placements</h2>
+       <p>
+         Our Placement Cell is dedicated to providing students with excellent career opportunities across various industries. 
+         We collaborate with leading companies to organize campus recruitment drives, offer interview preparation sessions, 
+         and conduct aptitude and soft skills training. With a strong network of recruiters and a focus on student readiness, 
+         we aim to ensure that each graduate steps confidently into the professional world. Our consistent placement records 
+         reflect our commitment to helping students achieve their career goals.
+       </p>
+
+    </div>
+  </div>
+
+  <!-- Resources Section -->
+<div id="resources" class="section" style="background-image: url('resource.jpg');">
+  <div class="content-box">
+    <h2>Resources</h2>
+    <p>
+      Explore a curated list of trusted platforms that help students enhance their coding skills, 
+      prepare for interviews, and participate in competitive programming. Whether you're a beginner 
+      or looking to master advanced topics, these resources offer everything you need to grow.
+    </p>
+
+    <ul class="resource-list">
+      <li><a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a> – DSA, core CS, placement prep</li>
+      <li><a href="https://leetcode.com" target="_blank">LeetCode</a> – Interview-level coding problems</li>
+      <li><a href="https://www.hackerrank.com" target="_blank">HackerRank</a> – Practice + certifications</li>
+      <li><a href="https://www.codeforces.com" target="_blank">Codeforces</a> – Competitive programming</li>
+      <li><a href="https://www.codingninjas.com" target="_blank">Coding Ninjas</a> – Paid courses & career guidance</li>
+      <li><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> – Free full-stack dev training</li>
+      <li><a href="https://www.codecademy.com" target="_blank">Codecademy</a> – Interactive beginner courses</li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span>© 2025 Training and Placement Management System. All rights reserved.</span>
+      <a href="contact_us.html" class="contact-link">Contact Us</a>
+    </div>
+  </footer>
+</body>
+</html>

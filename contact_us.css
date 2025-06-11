@@ -1,0 +1,21 @@
+h1{
+    color: white;
+    background-color: blue;
+   
+}
+
+div{
+    border: 10px;
+    margin: 20px
+}
+
+html{
+    background-color: powderblue;
+
+}
+
+#div{
+    padding: 10px;
+    
+    background-color: aquamarine;
+}

@@ -1,0 +1,91 @@
+/* General Layout */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #ffffff);
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #007acc;
+  margin-bottom: 40px;
+}
+
+/* FAQ Section */
+.faq-section h2 {
+  color: #006699;
+  margin-bottom: 20px;
+}
+
+.faq h4 {
+  color: #007acc;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.faq p {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+/* Contact Form */
+.contact-section {
+  margin-top: 40px;
+}
+
+.contact-section h2 {
+  color: #007acc;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #007acc;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.contact-form button:hover {
+  background-color: #005a99;
+}
+
+/* Contact Info */
+.contact-info {
+  margin-top: 25px;
+  font-size: 15px;
+}
