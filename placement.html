@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Placement Statistics</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f8;
+      padding: 40px;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2.5rem;
+      color: #222;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    .company-name {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #0057a3;
+    }
+
+    .stats {
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #007b3e;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Engineering Placement Statistics - 2025</h1>
+
+  <div class="container">
+    <div class="card">
+      <div class="company-name">Google</div>
+      <div class="stats">
+        Hired: <span class="highlight">12 students</span><br>
+        Avg Package: <span class="highlight">₹45 LPA</span><br>
+        Roles: Software Engineer, SRE
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="company-name">Microsoft</div>
+      <div class="stats">
+        Hired: <span class="highlight">15 students</span><br>
+        Avg Package: <span class="highlight">₹40 LPA</span><br>
+        Roles: Developer, Cloud Engineer
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="company-name">TCS</div>
+      <div class="stats">
+        Hired: <span class="highlight">40 students</span><br>
+        Avg Package: <span class="highlight">₹7 LPA</span><br>
+        Roles: System Engineer, Analyst
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="company-name">Amazon</div>
+      <div class="stats">
+        Hired: <span class="highlight">10 students</span><br>
+        Avg Package: <span class="highlight">₹35 LPA</span><br>
+        Roles: SDE, Data Engineer
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="company-name">Infosys</div>
+      <div class="stats">
+        Hired: <span class="highlight">30 students</span><br>
+        Avg Package: <span class="highlight">₹6.5 LPA</span><br>
+        Roles: Tech Associate, QA Engineer
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
